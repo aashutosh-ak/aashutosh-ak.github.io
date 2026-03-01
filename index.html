@@ -14,8 +14,12 @@
   <a href="research.html">Research</a>
   <a href="publications.html">Publications</a>
   <a href="blog.html">Blog</a>
-
-  <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+<button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <!-- half-moon icon -->
+    <path d="M12 2a10 10 0 100 20V2z"></path>
+  </svg>
+</button>
 </nav>
 </header>
 
@@ -59,10 +63,10 @@
 
 </main>
 <script>
+document.addEventListener("DOMContentLoaded", () => {
   const root = document.documentElement;
   const btn = document.getElementById("themeToggle");
 
-  // Apply saved theme on load
   const saved = localStorage.getItem("theme");
   if (saved) root.setAttribute("data-theme", saved);
 
@@ -72,6 +76,7 @@
     root.setAttribute("data-theme", next);
     localStorage.setItem("theme", next);
   });
+});
 </script>
 </body>
 </html>

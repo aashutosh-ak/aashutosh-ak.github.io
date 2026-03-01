@@ -5,6 +5,7 @@
   --muted:#6b7280;
   --line:#e5e7eb;
   --bg:#ffffff;
+  --panel:#ffffff;
 }
 :root[data-theme="dark"]{
   --text:#e5e7eb;

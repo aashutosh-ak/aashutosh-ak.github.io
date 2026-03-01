@@ -14,6 +14,8 @@
   <a href="research.html">Research</a>
   <a href="publications.html">Publications</a>
   <a href="blog.html">Blog</a>
+
+  <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
 </nav>
 </header>
 
@@ -56,6 +58,20 @@
 <div class="footer-line"></div>
 
 </main>
+<script>
+  const root = document.documentElement;
+  const btn = document.getElementById("themeToggle");
 
+  // Apply saved theme on load
+  const saved = localStorage.getItem("theme");
+  if (saved) root.setAttribute("data-theme", saved);
+
+  btn.addEventListener("click", () => {
+    const isDark = root.getAttribute("data-theme") === "dark";
+    const next = isDark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+  });
+</script>
 </body>
 </html>

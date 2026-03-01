@@ -127,3 +127,55 @@ h2{
   .hero{ grid-template-columns:1fr; }
   .photo{ margin-top:22px; width:240px; }
 }
+/* make nav vertically aligned */
+.nav{ align-items:center; }
+
+/* Toggle button */
+.theme-btn{
+  width:34px;
+  height:34px;
+  padding:0;
+  margin-left:6px;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:rgba(0,0,0,0.04);
+  color:var(--muted);
+
+  cursor:pointer;
+  -webkit-appearance:none;
+  appearance:none;
+
+  transition: background .2s ease, border-color .2s ease, color .2s ease, transform .12s ease;
+}
+
+.theme-btn:hover{
+  background:rgba(0,0,0,0.08);
+  color:var(--text);
+  transform: translateY(-1px);
+}
+
+.theme-btn:focus{
+  outline:none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+/* Icon styling (SVG) */
+.theme-icon{
+  width:16px;
+  height:16px;
+  fill: currentColor;
+  display:block;
+}
+
+/* In dark mode: make the button readable */
+:root[data-theme="dark"] .theme-btn{
+  background: rgba(255,255,255,0.06);
+}
+:root[data-theme="dark"] .theme-btn:hover{
+  background: rgba(255,255,255,0.10);
+}

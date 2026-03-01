@@ -6,6 +6,13 @@
   --line:#e5e7eb;
   --bg:#ffffff;
 }
+:root[data-theme="dark"]{
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --line:#1f2937;
+  --bg:#0b1220;
+  --panel:#0f1a31; /* for cards + navbar */
+}
 
 *{ box-sizing:border-box; }
 
@@ -24,7 +31,7 @@ a:hover{ text-decoration:underline; }
 .topbar{
   position:sticky;
   top:0;
-  background:#fff;
+  background: var(--panel, #fff);
   border-bottom:1px solid var(--line);
   z-index:100;
 }
@@ -105,7 +112,7 @@ h2{
   border-radius:14px;
   padding:14px 16px;
   margin:12px 0;
-  background:#fff;
+  background: var(--panel, #fff);
 }
 
 .footer-line{

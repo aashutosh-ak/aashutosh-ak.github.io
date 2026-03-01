@@ -1,163 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Ashutosh Kumar | Howard University</title>
-
-<style>
-:root{
-  --blue:#2563eb;
-  --orange:#f97316;
-  --text:#111827;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-}
-
-body{
-  margin:0;
-  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-  background:#ffffff;
-  color:var(--text);
-  line-height:1.7;
-}
-
-a{
-  text-decoration:none;
-  color:var(--blue);
-}
-
-a:hover{
-  text-decoration:underline;
-}
-
-/* ===== Top Navigation ===== */
-
-.topbar{
-  position:sticky;
-  top:0;
-  background:#fff;
-  border-bottom:1px solid var(--line);
-  z-index:100;
-}
-
-.nav{
-  max-width:1100px;
-  margin:auto;
-  padding:14px 20px;
-  display:flex;
-  justify-content:flex-end;
-  gap:28px;
-  font-size:14px;
-}
-
-.nav a{
-  color:var(--muted);
-}
-
-.nav a:hover{
-  color:var(--text);
-}
-
-/* ===== Main Layout ===== */
-
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px 100px;
-}
-
-.hero{
-  display:grid;
-  grid-template-columns:1.6fr 0.9fr;
-  gap:50px;
-  align-items:start;
-}
-
-.name{
-  font-size:42px;
-  margin:0 0 8px;
-}
-
-.name span:first-child{
-  color:var(--blue);
-}
-
-.name span:last-child{
-  color:var(--orange);
-}
-
-.subtitle{
-  color:var(--muted);
-  font-size:14px;
-  margin-bottom:20px;
-}
-
-section{
-  margin-top:80px;
-}
-
-h2{
-  font-size:22px;
-  margin-bottom:14px;
-  border-bottom:1px solid var(--line);
-  padding-bottom:6px;
-}
-
-.photo{
-  width:280px;
-  border-radius:12px;
-}
-
-.footer-line{
-  margin-top:60px;
-  width:220px;
-  height:3px;
-  background:var(--orange);
-}
-
-@media(max-width:900px){
-  .hero{
-    grid-template-columns:1fr;
-  }
-  .photo{
-    margin-top:30px;
-  }
-}
-</style>
+<link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
-
-<!-- ===== Navigation ===== -->
 
 <header class="topbar">
   <nav class="nav">
-    <a href="https://aashutosh-ak.github.io/" target="_blank" rel="noopener noreferrer">About</a>
-    <a href="https://aashutosh-ak.github.io/#research" target="_blank" rel="noopener noreferrer">Research</a>
-    <a href="https://aashutosh-ak.github.io/#publications" target="_blank" rel="noopener noreferrer">Publications</a>
-    <a href="https://aashutosh-ak.github.io/#blog" target="_blank" rel="noopener noreferrer">Blog</a>
+    <a href="index.html" target="_blank" rel="noopener noreferrer">About</a>
+    <a href="research.html" target="_blank" rel="noopener noreferrer">Research</a>
+    <a href="publications.html" target="_blank" rel="noopener noreferrer">Publications</a>
+    <a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a>
   </nav>
 </header>
-
-<!-- ===== Main Content ===== -->
 
 <main class="container">
 
 <div class="hero">
   <div>
     <h1 class="name">
-      <span>Ashutosh</span> <span>Kumar</span>
+      <span class="first">Ashutosh</span> <span class="last">Kumar</span>
     </h1>
 
     <p class="subtitle">
-      Ph.D Candidate, Howard University 
+      Howard University · Chirality · Topological Materials · Nonlinear Transport · Optical Responses
     </p>
 
     <p>
-      Hello! I am Ashutosh. I work on chirality-driven quantum phenomena and
-      topological materials, focusing on symmetry-governed nonlinear transport
-      and optical responses using first-principles electronic-structure methods.
+      Hello! I am Ashutosh Kumar. I work on chirality-driven quantum phenomena and
+      topological materials, focusing on symmetry-governed nonlinear transport and
+      optical responses using first-principles electronic-structure methods.
     </p>
 
     <p>
@@ -166,39 +41,17 @@ h2{
     </p>
 
     <p>
-      <a href="https://github.com/aashutosh-ak" target="_blank">GitHub</a> ·
-      <a href="#">Google Scholar</a> ·
-      <a href="#">CV</a> ·
-      <a href="mailto:ashutoshkashav97@gmail.com">Email</a>
+      <a href="https://github.com/ashutosh" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+      <a href="#" target="_blank" rel="noopener noreferrer">Google Scholar</a> ·
+      <a href="#" target="_blank" rel="noopener noreferrer">CV</a> ·
+      <a href="mailto:ashutoshkashav97@gmail.com">ashutoshkashav97@gmail.com</a>
     </p>
   </div>
 
   <div>
-    <img src="assets/ashutosh.jpg" class="photo" alt="Ashutosh">
+    <img src="assets/profile.jpg" class="photo" alt="Ashutosh Kumar">
   </div>
 </div>
-
-<section id="research">
-  <h2>Research</h2>
-  <ul>
-    <li>Chiral quantum materials</li>
-    <li>Topological band structures and Berry curvature physics</li>
-    <li>Nonlinear Hall effect and Berry curvature dipole</li>
-    <li>Linear and nonlinear optical responses</li>
-  </ul>
-</section>
-
-<section id="publications">
-  <h2>Publications</h2>
-  <ol>
-    <li><strong>Paper Title</strong>, Ashutosh, Coauthors, <em>Journal</em> (Year).</li>
-  </ol>
-</section>
-
-<section id="blog">
-  <h2>Blog</h2>
-  <p>Coming soon.</p>
-</section>
 
 <div class="footer-line"></div>
 
